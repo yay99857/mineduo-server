@@ -1,9 +1,7 @@
 package config
 
 func Init() {
-    random_number := 20
-    logger := GetLogger("config")
-    logger.Infof("CONFIG INITIALIZED: %d", random_number)
+    ConnectDatabase()
 }
 
 //Get new log instace

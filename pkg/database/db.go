@@ -1,4 +1,4 @@
-package config
+package database
 
 import (
 	"gorm.io/driver/postgres"
@@ -14,4 +14,8 @@ func ConnectDatabase() {
 	if err != nil {
 		panic(err)
 	}
+	// db.AutoMigrate(&models.User{})
+	// db.AutoMigrate(&models.Dupla{})
+	// db.AutoMigrate(&models.Match{})
+	// db.AutoMigrate(&models.Profile{})
 }
